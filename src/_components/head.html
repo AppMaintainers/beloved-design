@@ -1,0 +1,17 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% capture resource_title %}{{ title | strip_html | strip_newlines }}{% endcapture %}
+<title>{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
+
+<meta name="description" content="{{ metadata.description }}" />
+
+<link rel="stylesheet" href="{% asset_path css %}" />
+<script src="{% asset_path js %}" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-flags.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-payments.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler-vendors.min.css">
+
+{% live_reload_dev_js %}

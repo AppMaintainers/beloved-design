@@ -1,0 +1,71 @@
+---
+layout: default
+title: Your projects
+---
+
+{% render "sub_header", metadata: site.metadata, resource: resource %}
+
+<!-- Page body -->
+<div class="page-body">
+    <div class="container-xl">
+        <div class="row row-deck row-cards">
+            {% for num in (1..5) %}
+                <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <a href="projects/Kinteract" class="link-secondary">
+                                Kinteract {{ num }}
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="datagrid">
+                            <div class="datagrid-item">
+                                <div class="datagrid-title">Project owners</div>
+                                <div class="datagrid-content">
+                                    <div class="avatar-list avatar-list-stacked">
+                                        <span class="avatar avatar-xs avatar-rounded">AF</span>
+                                        <span class="avatar avatar-xs avatar-rounded">JL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="datagrid-item">
+                                <div class="datagrid-title">Developers</div>
+                                <div class="datagrid-content">
+                                    <div class="avatar-list avatar-list-stacked">
+                                        <span class="avatar avatar-xs avatar-rounded">AF</span>
+                                        <span class="avatar avatar-xs avatar-rounded">JL</span>
+                                        <span class="avatar avatar-xs avatar-rounded">MK</span>
+                                        <span class="avatar avatar-xs avatar-rounded">KL</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="datagrid-item">
+                                <div class="datagrid-title">Links</div>
+                                <div class="datagrid-content">
+                                    <a href="/projects/links" class="link-secondary">
+                                        12
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="datagrid-item">
+                                <div class="datagrid-title">Accounts</div>
+                                <div class="datagrid-content">
+                                    <a href="/projects/accounts" class="link-secondary">
+                                        2
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="datagrid-item">
+                                <div class="datagrid-title">Last updated</div>
+                                <div class="datagrid-content">30 days ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
