@@ -1,0 +1,44 @@
+---
+layout: default
+title: Your projects
+---
+
+{% render "sub_header_kinteract", metadata: site.metadata, resource: resource %}
+
+<div class="page-body">
+    <div class="container-xl">
+        <div class="row row-deck row-cards">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Creating a new link</h1>
+                        <br>
+                        <form action="/projects/links">
+                            <div class="mb-3">
+                                <label for="projectTitle" class="form-label required">Title</label>
+                                <input type="text" class="form-control" id="projectTitle">
+                            </div>
+                            <div class="mb-3">
+                                <label for="projectHref" class="form-label required">URL</label>
+                                <input type="text" class="form-control" id="projectHref">
+                            </div>
+                            <div class="mb-3">
+                                <label for="projectDesc" class="form-label">Description</label>
+                                <textarea class="form-control" id="projectDesc" aria-describedby="descHelp">
+                                </textarea>
+                                <div id="descHelp" class="form-text">
+                                    What would be useful to know about this link?
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <a href="/projects/links" class="link-secondary ml">cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

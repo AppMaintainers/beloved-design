@@ -1,0 +1,66 @@
+---
+layout: default
+title: Your projects
+---
+
+{% render "sub_header_kinteract", metadata: site.metadata, resource: resource %}
+
+<div class="page-body">
+    <div class="container-xl">
+        <div class="row row-deck row-cards">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Creating a new account</h1>
+                        <br>
+                        <form action="/projects/accounts">
+                            <div class="mb-3">
+                                <label for="accountService" class="form-label required">Service</label>
+                                <input type="text" class="form-control" id="accountService">
+                            </div>
+                            <div class="mb-3">
+                                <label for="accountDomain" class="form-label required">Domain</label>
+                                <input type="text" class="form-control" id="accountDomain">
+                            </div>
+                            <div class="mb-3">
+                                <label for="accountManages" class="form-label required">Who manages?</label>
+                                <select class="form-select" id="accountManages" multiple>
+                                    <option selected>Select people who manages this service</option>
+                                    <option value="1">Alex</option>
+                                    <option value="2">Jack</option>
+                                    <option value="3">Attila</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="accountOwn">
+                                <label class="form-check-label" for="accountOwn">Own account needed?</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="accountDev">
+                                <label class="form-check-label" for="accountDev">Needed for every developer?</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="accountMFA">
+                                <label class="form-check-label" for="accountMFA">MFA needed?</label>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="projectDesc" class="form-label">Description</label>
+                                <textarea class="form-control" id="projectDesc" aria-describedby="descHelp">
+                                </textarea>
+                                <div id="descHelp" class="form-text">
+                                    What would be useful to know about this link?
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <a href="/projects/accounts" class="link-secondary ml">cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

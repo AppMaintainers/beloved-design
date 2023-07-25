@@ -1,0 +1,47 @@
+---
+layout: default
+title: Your projects
+---
+
+{% render "sub_header_new", metadata: site.metadata, resource: resource %}
+
+<div class="page-body">
+    <div class="container-xl">
+        <div class="row row-deck row-cards">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Creating a new project</h1>
+                        <br>
+                        <form action="/">
+                            <div class="mb-3">
+                                <label for="projectTitle" class="form-label required">Title</label>
+                                <input type="text" class="form-control" aria-describedby="titleHelp" id="projectTitle">
+                                <div id="titleHelp" class="form-text">
+                                    The public name of the project we can refer to
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="projectDesc" class="form-label">Description</label>
+                                <textarea class="form-control" id="projectDesc" aria-describedby="descHelp">
+                                </textarea>
+                                <div id="descHelp" class="form-text">
+                                    How could you describe the project from a bird eye view?
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="proejctActive">
+                                <label class="form-check-label" for="proejctActive">Active?</label>
+                            </div>
+
+                            <br>
+
+                            <button type="submit" class="btn btn-primary">Save</button>
+                            <a href="/" class="link-secondary ml">cancel</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

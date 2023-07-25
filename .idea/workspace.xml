@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="462aeec7-f174-42e2-953b-4583feb47688" name="Changes" comment="" />
+    <list default="true" id="462aeec7-f174-42e2-953b-4583feb47688" name="Changes" comment="Initial prototype">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/sub_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/sub_header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_components/sub_header_kinteract.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/_components/sub_header_kinteract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projects/Kinteract.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/Kinteract.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projects/accounts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/accounts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/projects/links/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/projects/links/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/juhat/Sites/beloved_design/src/projects",
+    "last_opened_file_path": "/Users/juhat/Sites/beloved_design/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,9 +50,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/projects" />
-      <recent name="$PROJECT_DIR$/src/_layouts" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/projects/accounts" />
+      <recent name="$PROJECT_DIR$/src/projects/links" />
+      <recent name="$PROJECT_DIR$/src/" />
       <recent name="$PROJECT_DIR$/src/_components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,11 +69,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688993630949</updated>
-      <workItem from="1688993631990" duration="12556000" />
+      <workItem from="1688993631990" duration="12726000" />
+      <workItem from="1690272015920" duration="4999000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial prototype">
+      <created>1689097617006</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689097617006</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial prototype" />
   </component>
 </project>
